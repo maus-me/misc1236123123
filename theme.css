@@ -1,1 +1,104 @@
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_font.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/base.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/accentlist.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/pan-animation.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/accentlist.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple-logo.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/glassy.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/effects/pan-animation.css');
 
+.pageTitleWithDefaultLogo {
+	background-image: url(https://cdn.jsdelivr.net/gh/nullip/misc1236123123/logo_full.png) !important;
+}
+
+:root {--rounding: 12px;}
+
+.backdropImage {filter: blur(6px) saturate(120%) contrast(120%) brightness(40%);}
+
+html {
+  background: radial-gradient(circle at 0% 100%, rgba(54, 66, 84, 0.55) 0%, rgba(54, 66, 84, 0.043) 70%, rgba(54, 66, 84, 0) 80%), radial-gradient(circle at 100% 100%, rgb(47 52 56 / 55%) 0%, rgba(113, 135, 153, 0.043) 70%, rgba(113, 135, 153, 0) 80%), radial-gradient(circle at 100% 0%, rgba(54, 66, 84, 0.55) 0%, rgba(54, 66, 84, 0.043) 70%, rgba(54, 66, 84, 0) 80%), radial-gradient(circle at 0% 0%, rgb(129 170 208 / 55%) 0%, rgba(91, 114, 135, 0.043) 70%, rgba(91, 114, 135, 0) 80%), rgb(0, 0, 0) !important;
+}
+:root {
+  --theme-primary-color: #0de5a0 !important;
+  --theme-accent-text-color: #0de5a0 !important;
+  --theme-primary-color-lightened: #0de5a0 !important;
+  --theme-icon-focus-background: rgb(229 160 13 / 20%) !important;
+  --theme-accent-transparent: rgb(13 229 160 / 70%) !important; /* CUSTOM */
+}
+:not(.layout-tv):root {
+  --theme-background:  !important;
+  --header-blur-background: rgba(20, 20, 20, 0.66) !important;
+  --drawer-background: #2C2C2E !important;
+  --docked-drawer-background: rgba(0, 0, 0, 0.25) !important;
+  --dialog-header-background: #2b323c !important;
+  --button-background: #1f1f1f !important;
+  --card-background: rgba(0, 0, 0, 0.15) !important;
+  --footer-blur-background: rgba(29, 29, 31, 0.66) !important;
+}
+
+/* Sidebar */
+.emby-collapse-expandIcon {display:none;height:0px;width:0px;}
+
+/* ---------- POSTER */
+
+/* Magnification effect on the poster */
+.cardBox{transition:all 0.1s;}
+.cardBox:hover {transform:scale(1.025);transition:all 0.1s;}
+
+
+/* Don't remember, pretty sure this squares up "square" posters like music */
+.cardPadder-square>.cardImage {
+    object-fit: cover !important;
+}
+
+.cardPadder-portrait>.cardImage {
+    object-fit: contain !important !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* ----------- METADATA/MEDIAINFO */
+
+
+.listItemOverlayButtonIcon:is([aria-label="Mark Unplayed"]),  {
+  color: var(--theme-primary-color) !important;
+}
+.listItemOverlayButtonIcon:is([aria-label="Mark Played"]), .listItemOverlayButtonIcon {
+  color: #FFF !important;
+}
+
+/* VIDEO UI */
+
+
+/* Primary UI Color */
+.guide-currentTimeIndicatorDot, .guide-currentTimeIndicatorDot {
+  color: var(--theme-primary-color) !important;
+}
+.emby-select:not(.nope):focus {
+  border-color: var(--theme-primary-color) !important;
+}
+.emby-input:focus, .emby-textarea:focus {
+  border-color: var(--theme-primary-color) !important;
+}
+.emby-toggle:checked + .toggleLabel::before {
+  background: var(--theme-primary-color) !important;
+  opacity: 0.5;
+}
+.emby-toggle:checked + .toggleLabel::after {
+  background: var(--theme-primary-color) !important;
+}
+.cardContent-shadow {
+    background-color: transparent!important;
+}
+input.searchfields-txtSearch {
+  border-color: transparent !important;
+}
+.emby-select:not(.nope):focus {
+  border-color: var(--theme-primary-color) !important;
+}
+.emby-checkbox:checked + .checkboxLabel:before {
+  border-color: var(--theme-primary-color) !important;
+  background-color: var(--theme-primary-color) !important;
+}
